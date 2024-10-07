@@ -17,14 +17,15 @@ const Modal: React.FC<Props> = ({
     <div>
       <BackDrop show={show} />
       {show && (
-        <motion.div animate={{rotate: 180}}
-                    transition={{
-                      repeat: 1,
-                      repeatType: "reverse",
-                      duration: 2,
-                    }}
-                    className="modal show"
-                    style={{display: show ? "block" : "none"}}
+        <motion.div
+          animate={{ rotate: 180 }}
+          transition={{
+            repeat: 1,
+            repeatType: "reverse",
+            duration: 2,
+          }}
+          className="modal show"
+          style={{ display: show ? "block" : "none" }}
         >
           <div className="modal-dialog">
             <div className="modal-content">

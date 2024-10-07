@@ -24,7 +24,7 @@ const Alert: React.FC<Props> = ({
             borderRadius: ["20%", "20%", "50%", "50%", "20%"],
           }}
           className="modal show"
-          style={{display: show ? "block" : "none"}}
+          style={{ display: show ? "block" : "none" }}
         >
           <div className="modal-dialog">
             <div
@@ -38,14 +38,14 @@ const Alert: React.FC<Props> = ({
                 {clickDismissable
                   ? null
                   : closeAlert && (
-                  <button
-                    type="button"
-                    className="btn-close"
-                    data-bs-dismiss="modal"
-                    aria-label="Close"
-                    onClick={closeAlert}
-                  ></button>
-                )}
+                      <button
+                        type="button"
+                        className="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                        onClick={closeAlert}
+                      ></button>
+                    )}
               </div>
             </div>
           </div>
