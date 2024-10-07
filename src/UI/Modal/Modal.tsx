@@ -15,10 +15,8 @@ const Modal:React.FC<Props> = ({show, title = "Start title", children, closeModa
                     <div className="modal-content">
                         <div className="modal-header align-items-center justify-content-between">
                             <h1 className="modal-title fs-5">{title}</h1>
-                            <button style={{background: "url(https://www.svgrepo.com/show/524430/close-circle.svg) center center / 20px auto no-repeat",
-                                            border: "none",
-                                            padding: "10px",
-                            }}
+                            <button type="button" className="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"
                                     onClick={closeModal}>
                             </button>
                         </div>
